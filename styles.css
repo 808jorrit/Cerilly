@@ -1,0 +1,51 @@
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+.title-div{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.site-title {
+    font-family: inherit;
+}
+
+.navitem {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navitem a:hover {
+    text-decoration: underline 0.3em rgba(0, 100, 200, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.content {
+    background-color: grey;
+    padding: 100px;
+    margin: 0px;
+
+
+}
+
+.img1 {
+    width: 250px;
+    float: right;
+}
