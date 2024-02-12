@@ -1,3 +1,11 @@
+.navbar {
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:1;
+  background-color: rgba(0,0,0,0.3); /** Change value according to you transperncy**/
+}
+
 .navlist {
     list-style-type: none;
     margin: 0;
@@ -9,15 +17,50 @@
 .title-div{
     margin: 0;
     padding: 0;
+    font-family:garamond;
+}
+
+.tagline {
+    font-family:garamond;
+    font-size: 24px:
+    margin: 0;
+    border: 0px;
+}
+
+* { box-sizing: border-box; }
+.video-bg {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.videodiv,
+.videodiv iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .videodiv { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .videodiv { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
 }
 
 .navbar {
     margin: 0;
     padding: 0;
-}
-
-.site-title {
-    font-family: inherit;
 }
 
 .navitem {
@@ -41,8 +84,6 @@ li a {
     background-color: grey;
     padding: 100px;
     margin: 0px;
-
-
 }
 
 .img1 {
